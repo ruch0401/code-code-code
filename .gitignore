@@ -29,3 +29,5 @@ target_*/*
 .idea
 .git
 /recursion/recursion.iml
+/*/*.iml
+out/*
