@@ -1,6 +1,23 @@
 import java.util.*;
 
+/**
+ * Sample Input -
+ * 10
+ * 33 14 50 9 8 11 6 40 2 15
+ * 7 2 5 9 3 2 1 10 3 3
+ * 5
+ */
 public class Problem003 {
+
+    static class Item {
+        public int val;
+        public int wt;
+
+        Item(int val, int wt) {
+            this.val = val;
+            this.wt = wt;
+        }
+    }
 
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
@@ -51,15 +68,5 @@ public class Problem003 {
         }
 
         System.out.println(sumV);
-    }
-}
-
-class Item {
-    public int val;
-    public int wt;
-
-    Item(int val, int wt) {
-        this.val = val;
-        this.wt = wt;
     }
 }
