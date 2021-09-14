@@ -1,6 +1,7 @@
 import java.util.*;
 
 /**
+ * Fractional Knapsack Problem
  * Sample Input -
  * 10
  * 33 14 50 9 8 11 6 40 2 15
