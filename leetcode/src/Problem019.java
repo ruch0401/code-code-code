@@ -4,6 +4,8 @@ import java.util.*;
 
 /**
  * https://bytes.usc.edu/cs585/f21_d--a--ta/hw/HW2/index.html - DB HW2
+ * Link to the ER Diagram for the schema that has been provided
+ * https://lucid.app/lucidchart/c1da8223-7cbb-422d-bf23-27b6c155d53d/edit?viewport_loc=-254%2C70%2C2521%2C1331%2C0_0&invitationId=inv_78b423eb-2eef-40d8-b55a-74cc7d8bd7aa
  */
 public class Problem019 {
     public static void main(String[] args) {
