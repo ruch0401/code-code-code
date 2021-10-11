@@ -2,6 +2,9 @@ import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.*;
 
+/**
+ * https://bytes.usc.edu/cs585/f21_d--a--ta/hw/HW2/index.html - DB HW2
+ */
 public class Problem019 {
     public static void main(String[] args) {
         int[] employeeId = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
@@ -150,4 +153,29 @@ public class Problem019 {
         long diff = end - offset + 1;
         return new Timestamp(offset + (long) (Math.random() * diff));
     }
+
+    /*
+    USE THE FOLLOWING INSERT QUERIES FOR INSERTING INTO SYMPTOM TABLE - INPUT HAS BEEN DESIGNED FOR THE DIVISION QUERY TO WORK
+
+    INSERT INTO symptom VALUES (1, 19, '2020-08-03 22:38:41.925', '2');
+    INSERT INTO symptom VALUES (2, 1, '2020-05-03 05:34:45.349', '5');
+    INSERT INTO symptom VALUES (3, 2, '2020-12-04 22:41:33.107', '1');
+    INSERT INTO symptom VALUES (4, 3, '2020-04-09 06:02:20.585', '3');
+    INSERT INTO symptom VALUES (5, 4, '2020-09-03 09:19:43.102', '4');
+    INSERT INTO symptom VALUES (6, 5, '2020-01-03 12:45:41.76', '4');
+    INSERT INTO symptom VALUES (7, 6, '2020-02-25 13:37:40.358', '4');
+    INSERT INTO symptom VALUES (8, 7, '2020-08-26 12:43:17.482', '1');
+    INSERT INTO symptom VALUES (9, 8, '2020-11-17 12:44:48.516', '5');
+    INSERT INTO symptom VALUES (10, 9, '2020-05-05 06:37:24.252', '5');
+    INSERT INTO symptom VALUES (11, 10, '2020-05-07 10:46:08.679', '3');
+    INSERT INTO symptom VALUES (12, 11, '2020-09-13 21:29:46.555', '3');
+    INSERT INTO symptom VALUES (13, 12, '2020-12-16 09:43:13.716', '3');
+    INSERT INTO symptom VALUES (14, 13, '2020-01-04 01:29:07.794', '3');
+    INSERT INTO symptom VALUES (15, 14, '2020-02-15 05:32:02.743', '4');
+    INSERT INTO symptom VALUES (16, 15, '2020-08-26 10:09:56.248', '5');
+    INSERT INTO symptom VALUES (17, 19, '2020-04-18 03:28:18.073', '1');
+    INSERT INTO symptom VALUES (19, 19, '2020-04-18 03:28:18.073', '2');
+    INSERT INTO symptom VALUES (20, 19, '2020-04-18 03:28:18.073', '4');
+    INSERT INTO symptom VALUES (18, 19, '2020-04-18 03:28:18.073', '5');
+     */
 }
