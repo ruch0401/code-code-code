@@ -5,7 +5,7 @@ import java.util.Arrays;
 /*
  * Sprint Training | Range Sum and use of Prefix Array
  * Hackerrank
- * Citadel |
+ * Citadel
  */
 public class C_Problem002 {
     public static void main(String[] args) {
