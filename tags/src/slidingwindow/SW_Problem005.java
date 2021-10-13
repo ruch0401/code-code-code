@@ -2,6 +2,10 @@ package slidingwindow;
 
 import java.util.*;
 
+/*
+ * Maximum of the greatest numbers from all the windows of size k
+ * Technique: Sliding Window [Fixed]
+ */
 public class SW_Problem005 {
     public static void main(String[] args) {
         int[][] arr = {{12, -1, -7, 8, -15, 30, 16, 28}, {2, 5, 4, 6, 8}, {1, 1, 1}, {1, 2, 3, 1, 2}};
