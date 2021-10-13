@@ -3,6 +3,10 @@ package slidingwindow;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * Find all anagrams in a string
+ * Technique: Sliding Window [Fixed]
+ */
 public class SW_Problem004 {
     public static void main(String[] args) {
         String[] strings = {"cbaebabacd", "abab"};
