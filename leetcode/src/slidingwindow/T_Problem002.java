@@ -1,4 +1,4 @@
-package twitter;
+package slidingwindow;
 
 /*
 * Do They Belong?

@@ -1,4 +1,4 @@
-package twitter;
+package slidingwindow;
 
 /*
  * Maximum sum subarray of size k
