@@ -53,4 +53,26 @@ public class SW_Problem006 {
 
         return maxWindowSize;
     }
+
+    // Generalized format for variable sized sliding window protocol
+    /*
+    public void formatVariableSlidingWindow() {
+        int i = 0, j = 0;
+        while (j < size) {
+            // calculation
+            if (condition < k) {
+                j++;
+            } else if (condition == k) {
+                // find answer from calculation
+                j++;
+            } else if (condition > k) {
+                while (condition > k) {
+                    // reverse effects of i
+                    i++;
+                }
+                j++;
+            }
+        }
+    }
+     */
 }
