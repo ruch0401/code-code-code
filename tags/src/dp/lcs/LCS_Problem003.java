@@ -2,8 +2,8 @@ package dp.lcs;
 
 public class LCS_Problem003 {
     public static void main(String[] args) {
-        String[] xs = {"ABCDGH", "abcdaf"};
-        String[] ys = {"AEDFHR", "abcf"};
+        String[] xs = {"ABCDGH", "abcdaf", "AGGTAB"};
+        String[] ys = {"AEDFHR", "abcf", "GXTXAYB"};
 
         for (int i = 0; i < xs.length; i++) {
             String x = xs[i];
@@ -29,7 +29,7 @@ public class LCS_Problem003 {
 
         // code to print the longest common subsequence -> we get the lcs in reverse.
         int i = m, j = n;
-        while (i > 0 || j > 0) {
+        while (i > 0 && j > 0) {
             if (x.charAt(i - 1) == y.charAt(j - 1)) {
                 lcs.append(x.charAt(i - 1));
                 i--;
