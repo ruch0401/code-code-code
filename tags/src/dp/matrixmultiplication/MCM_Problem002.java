@@ -12,6 +12,8 @@ import java.util.Arrays;
  */
 public class MCM_Problem002 {
     static int[][] dp = new int[501][501];
+    static int left = -1;
+    static int right = -1;
     public static void main(String[] args) {
         String[] ss = {"ababbbabbababa", "abaaaabbbabababaa"};
         for(int[] d: dp) {
@@ -43,7 +45,21 @@ public class MCM_Problem002 {
 
         int min = Integer.MAX_VALUE;
         for (int k = i; k <= j - 1; k++) {
-            int temp = 1 + solve(s, i, k) + solve(s, k + 1, j);
+            // For better optimization -> we are also checking if the initial 2 problem division has been solved previously or not
+            if (dp[i][k] != -1) {
+                left = dp[i][k];
+            } else {
+                left = solve(s, i, k);
+                dp[i][k] = left;
+            }
+
+            if (dp[k + 1][j] != -1) {
+                right = dp[k + 1][j];
+            } else {
+                right = solve(s, k + 1, j);
+                dp[k + 1][j] = right;
+            }
+            int temp = 1 + left + right;
             min = Math.min(min, temp);
         }
         dp[i][j] = min;
