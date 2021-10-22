@@ -2,6 +2,21 @@ package binarysearch;
 
 import java.util.ArrayList;
 
+/*
+ * FIND FIRST AND LAST POSITIONS OF AN ELEMENT IN A SORTED ARRAY:
+ *
+ * Given a sorted array with possibly duplicate elements, the task is to find indexes of first and
+ * last occurrences of an element x in the given array.
+ *
+ * Example:
+ *
+ * Input : arr[] = {1, 3, 5, 5, 5, 5 ,67, 123, 125}
+ *         x = 5
+ * Output : First Occurrence = 2
+ *          Last Occurrence = 5
+ *
+ * PROBLEM STATEMENT LINK: https://practice.geeksforgeeks.org/problems/first-and-last-occurrences-of-x3116/1
+ */
 public class BS_Problem004 {
     public static void main(String[] args) {
         long[][] arr = {{1, 3, 5, 5, 5, 5, 67, 123, 125}, {1, 3, 5, 5, 5, 5, 7, 123, 125}};
