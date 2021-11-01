@@ -1,2 +1,7 @@
-package twitter;public class TT_Problem002 {
+package twitter;
+
+/*
+ * Game Events
+ */
+public class TT_Problem002 {
 }
