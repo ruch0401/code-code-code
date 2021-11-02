@@ -51,12 +51,10 @@ public class TT_Problem008 {
             System.out.println(hm);
         }
 
-        /*
-        find the last inputted token time and filter data based on expiry
+
+        // find the last inputted token time and filter data based on expiry
         Integer lastTime = commands.get(commands.size() - 1).get(2);
         return (int) hm.values().stream().filter(tokenTime ->  tokenTime >= lastTime).count();
-        */
 
-        return hm.size();
     }
 }
