@@ -55,6 +55,5 @@ public class TT_Problem008 {
         // find the last inputted token time and filter data based on expiry
         Integer lastTime = commands.get(commands.size() - 1).get(2);
         return (int) hm.values().stream().filter(tokenTime ->  tokenTime >= lastTime).count();
-
     }
 }
