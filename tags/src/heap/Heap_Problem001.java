@@ -1,5 +1,6 @@
 package heap;
 
+import java.util.Collections;
 import java.util.PriorityQueue;
 
 /*
@@ -23,10 +24,10 @@ public class Heap_Problem001 {
     }
 
     private static int kthSmallestElement(int[] arr, int k) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
         for (int elem: arr) {
             pq.add(elem);
-            if (pq.size() > 4) {
+            if (pq.size() > k) {
                 pq.poll();
             }
         }
