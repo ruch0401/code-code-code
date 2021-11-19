@@ -1,5 +1,10 @@
 package stack;
 
+/*
+ * Given an array arr[] of N non-negative integers representing the height of blocks.
+ * If width of each block is 1, compute how much water can be trapped between the blocks during the rainy season.
+ * https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1
+ */
 public class Stack_Problem008 {
     public static void main(String[] args) {
         int[][] arr = {{6, 2, 5, 4, 5, 1, 6}, {10, 4, 5, 90, 120, 80}, {3, 0, 0, 2, 0, 4}};
