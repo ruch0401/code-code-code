@@ -24,28 +24,13 @@ public class Heap_Problem005 {
         }
     }
 
-    static class Pair implements Comparator {
+    static class Pair {
         int first;
         int second;
 
         Pair(int first, int second) {
             this.first = first;
             this.second = second;
-        }
-
-        @Override
-        public int compare(Object o1, Object o2) {
-            int f = (int) o1;
-            int s = (int) o2;
-            return f - s;
-        }
-
-        @Override
-        public String toString() {
-            return "Pair {" +
-                    "first=" + first +
-                    ", second=" + second +
-                    '}';
         }
     }
 
